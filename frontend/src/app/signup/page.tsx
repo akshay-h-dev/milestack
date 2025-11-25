@@ -1,0 +1,16 @@
+import SignupForm from '@/components/auth/signup-form';
+import { Logo } from '@/components/layout/sidebar';
+
+export default function SignupPage() {
+  return (
+    <main className="flex min-h-screen flex-col items-center justify-center bg-background p-4">
+      <div className="w-full max-w-md space-y-8">
+        <div className="flex items-center justify-center gap-2">
+          <Logo />
+          <span className="font-semibold text-2xl">Milestack</span>
+        </div>
+        <SignupForm />
+      </div>
+    </main>
+  );
+}
